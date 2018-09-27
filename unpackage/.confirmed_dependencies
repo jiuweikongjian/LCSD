@@ -1,0 +1,48 @@
+{
+  "push/index.html": {
+    "href": "push/index.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/push/index.css",
+      "js/mui.min.js",
+      "images/timg.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "push/cate.html": {
+    "href": "push/cate.html",
+    "priority": 0
+  },
+  "push/addnews.html": {
+    "href": "push/addnews.html",
+    "priority": 0
+  },
+  "push/collect.html": {
+    "href": "push/collect.html",
+    "priority": 0
+  },
+  "push/personal.html": {
+    "href": "push/personal.html",
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/jquery-3.2.1.js",
+      "js/index.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/index.css",
+      "push/index.html"
+    ],
+    "refer": [
+      "push/index.html",
+      "push/cate.html",
+      "push/addnews.html",
+      "push/collect.html",
+      "push/personal.html"
+    ],
+    "priority": 0
+  }
+}

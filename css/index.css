@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+}
+li{
+	list-style-type:none;
+}
+footer ul{
+	width: 100%;
+	padding-left: 0px;
+	position: absolute;
+	bottom: 0px;
+	background: #DDDDDD;
+}
+footer ul li{
+	width: 20%;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	float: left;
+	border-radius: 10px;
+}
+footer ul .dem{
+	background: #4398ed;
+	color: #FFFFFF;
+}

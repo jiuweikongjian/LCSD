@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+}
+li{
+	list-style-type:none;
+}
+.cate{
+	width: 100%;
+
+
+}
+.cate ul{
+	width: 80%;
+	background: #4398ed;
+	display: block;
+	margin: 0 auto;
+}
+.cate ul li{
+	width: 40%;
+	height: 100px;
+	background: #4398ed;
+	float: left;
+	margin: 10px;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 100px;
+	color: #FFFFFF;
+}
