@@ -29,3 +29,10 @@ li{
 	font-size: 15px;
 	float: left;
 }
+.clic li{
+	float: left;
+	margin-right: 20px;
+}
+.bgimg{
+	background: #007AFF;
+}

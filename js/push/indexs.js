@@ -1,30 +1,54 @@
 mui.init();
-function new_list(){
+community_list();
+function community_list(){
 	var obj = {};
-	obj.act="app_list";
-	mui.ajax('http://server-name/login.php?'+obj,{
+	obj="";
+	mui.ajax('http://yyucs.onelog.cn/public/community_list/json',{
 	data:{
-		username:'username',
-		password:'password'
+		 //id:'2',
+		// password:'password'
 	},
 	dataType:'json',//服务器返回json格式数据
 	type:'post',//HTTP请求类型
 	timeout:10000,//超时时间设置为10秒；
 	headers:{'Content-Type':'application/json'},	              
 	success:function(data){
-		//服务器返回响应，根据响应结果，分析是否登录成功；
-		console.log(data);return;
+		if(data.code==200){
+			var str ='';
+            var arr = data.data;
+            for(var i in arr) {
+				str +='<div class="mui-card-header mui-card-media">'
+					+ '<img src="../images/timg.jpg" />'
+					+'<div class="mui-media-body">'
+					+arr[i].post_title
+					+'<p>发表于 '+arr[i].published_time+'</p>'
+					+' </div>'
+					+' </div>'
+					+'<div class="mui-card-content mui-card-media bgimg">' 
+					+arr[i].post_content
+					+'</div>'
+					+' <div class="mui-card-footer">'
+					+'点赞等功能区'
+					+'<ul class="clic">'
+					+'<li>1</li>'
+					+'<li>2</li>'
+					+'<li>3</li>'
+					+'<li>4</li>'
+					+'</ul>'
+					+'</div>'
+            }
+            $(".mui-card").html(str);
+		}
 	},
 	error:function(xhr,type,errorThrown){
 		//异常处理；
 		console.log(type);
 	}
-});
+	});
 }
-
 var mySwiper = new Swiper('.swiper-container',{
-  slidesPerView : 5,/*栏目显示数量*/
-  slidesPerGroup : 5,/*栏目显示数量*/
+slidesPerView : 5,/*栏目显示数量*/
+slidesPerGroup : 5,/*栏目显示数量*/
 })
 
 $('.swiper-slide').click(function(){
