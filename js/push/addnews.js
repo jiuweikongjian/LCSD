@@ -2,7 +2,7 @@ mui.init();
 $("#btn").on('click', function() {
 	var post_title=$("input[name=post_title]").val();
 	var post_content=$("input[name=post_content]").val();
-	mui.ajax('http://www.yyucs.com/public/add_article/json', {
+	mui.ajax(url+'add_article/json', {
 		data: {
 			post_content:post_content,
 			post_title:post_title

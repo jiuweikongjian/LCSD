@@ -3,7 +3,7 @@ add_activity();
 function add_activity(){
 	var obj = {};
 	obj="";
-	mui.ajax('http://www.yyucs.com/public/community_list/json',{
+	mui.ajax(url+'community_list/json',{
 	data:{
 		 //id:'2',
 		// password:'password'

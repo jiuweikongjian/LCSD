@@ -3,7 +3,7 @@ community_list();
 function community_list(){
 	var obj = {};
 	obj="";
-	mui.ajax('http://yyucs.onelog.cn/public/community_list/json',{
+	mui.ajax(url+'community_list/json',{
 	data:{
 		 //id:'2',
 		// password:'password'
