@@ -1,9 +1,9 @@
 mui.init();
-add_activity();
-function add_activity(){
+favoriteList();
+function favoriteList(){
 	var obj = {};
 	obj="";
-	mui.ajax(url+'community_list/json',{
+	mui.ajax(url+'favorite_list/json',{
 	data:{
 		 //id:'2',
 		// password:'password'
