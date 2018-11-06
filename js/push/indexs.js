@@ -17,7 +17,8 @@ function community_list(){
 			var str ='';
             var arr = data.data;
             for(var i in arr) {
-				str +='<div class="mui-card-header mui-card-media">'
+				str += '<div class="mui-card">'
+				    + '<div class="mui-card-header mui-card-media">'
 					+ '<img src="../images/timg.jpg" />'
 					+'<div class="mui-media-body">'
 					+arr[i].post_title
@@ -36,8 +37,9 @@ function community_list(){
 					+'<li>4</li>'
 					+'</ul>'
 					+'</div>'
+					+'</div>'
             }
-            $(".mui-card").html(str);
+            $(".contetn").html(str);
 		}
 	},
 	error:function(xhr,type,errorThrown){
