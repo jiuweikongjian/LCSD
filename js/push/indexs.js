@@ -39,7 +39,7 @@ function community_list(){
 					+'</div>'
 					+'</div>'
             }
-            $(".contetn").html(str);
+            $(".content").html(str);
 		}
 	},
 	error:function(xhr,type,errorThrown){
