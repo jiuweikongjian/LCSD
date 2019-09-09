@@ -1,3 +1,15 @@
-#btn{
+body{
+	font-family: 黑体;
+	font-size: 17px;
+}
+body input{
+ color: #8F8F94;
+}
+.content{
+	width: 100%;
+	height: 80px !important;
+}
+.btn{
+	text-align: center;
 	color: red !important;
 }

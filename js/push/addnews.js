@@ -1,5 +1,5 @@
 mui.init();
-$("#btn").on('click', function() {
+$(".btn").on('click', function() {
 	var post_title=$("input[name=post_title]").val();
 	var post_content=$("input[name=post_content]").val();
 	mui.ajax(url+'add_article/json', {
