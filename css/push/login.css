@@ -1,0 +1,9 @@
+ul { 
+	padding: 0px;
+	list-style: none; 
+}
+.input_sub{
+	width: 70%;
+	margin:23% auto!important;
+	border: 1px solid #E4E3E6;
+}
